@@ -1,7 +1,9 @@
 import styles from "./Button.module.css";
 
-type Props = {};
+type Props = {
+  children: string;
+};
 
 export function Button(props: Props) {
-  return <button className={styles.component}>button</button>;
+  return <button className={styles.component}>{props.children}</button>;
 }
